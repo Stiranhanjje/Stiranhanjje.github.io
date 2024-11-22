@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto - GhettoFaby Shop</title>
+    <link rel="stylesheet" href="faby.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Promociones.html">Promociones</a></li>
+                <li><a href="Sucursales.html">Sucursales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <div class="contact-form-container">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna duda o comentario, no dudes en ponerte en contacto con nosotros. ¡Te responderemos lo antes posible!</p>
+
+            <!-- Formulario de Contacto -->
+            <form id="contact-form" action="" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Tu correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">Enviar mensaje</button>
+            </form>
+
+            <!-- Mensaje de confirmación -->
+            <div id="confirmacion" style="display: none;">
+                <p>¡Gracias por tu mensaje! Te responderemos lo antes posible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GhettoFaby Shop. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculamos el archivo JS -->
+    <script src="faby.js"></script> <!-- Archivo JS para la lógica -->
+</body>
+</html>
